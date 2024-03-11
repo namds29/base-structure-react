@@ -1,10 +1,13 @@
 import "./App.scss";
+import { Route, Routes } from "react-router-dom";
+import Quiz from "./storefront/Quiz";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Quiz />} />
+      <Route path="/result" element={<Quiz />} />
+    </Routes>
   );
 }
 
